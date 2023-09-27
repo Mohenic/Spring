@@ -19,18 +19,22 @@ public class User1DAO {
 	}
 	
 	public User1DTO selectUser1(String uid) {
-		return null;
+		
+		return mybatis.selectOne("user1.selectUser1", uid);
+		
 	}
 	
 	public List<User1DTO> selectUser1s() {
-		return null;
+		
+		return mybatis.selectList("user1.selectUser1s");
+		
 	}
 	
 	public void updateUser1(User1DTO dto) {
-		
+		mybatis.update("user1.updateUser1", dto);
 	}
 	
 	public void deleteUser1(String uid) {
-		
+		mybatis.delete("user1.deleteUser1", uid);
 	}
 }

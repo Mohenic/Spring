@@ -1,7 +1,10 @@
 package ch06.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
@@ -16,7 +19,11 @@ public class User1Controller {
 	
 	
 	@GetMapping("/user1/list")
-	public String list() {
+	public String list(Model model) {
+		
+		List<User1DTO> users = service.selectUser1s();
+		model.addAttribute("users", users);
+		
 		return "/user1/list";
 	}
 	@GetMapping("/user1/register")
@@ -28,6 +35,28 @@ public class User1Controller {
 		
 		service.insertUser1(dto);
 		
+		return "redirect:/user1/list";
+	}
+	
+	@GetMapping("/user1/modify")
+	public String modify(String uid, Model model) {
+		
+		User1DTO user = service.selectUser1(uid);
+		model.addAttribute(user);
+		
+		
+		return "/user1/modify";
+	}
+	
+	@PostMapping("/user1/modify")
+	public String modify (User1DTO dto) {
+		service.updateUser1(dto);
+		return "redirect:/user1/list";
+	}
+	
+	@GetMapping("/user1/delete")
+	public String delete(String uid) {
+		service.deleteUser1(uid);
 		return "redirect:/user1/list";
 	}
 }
