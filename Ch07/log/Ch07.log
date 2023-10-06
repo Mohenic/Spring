@@ -6390,3 +6390,29 @@ com.mysql.cj.exceptions.DataConversionException: Cannot determine value type fro
 2023-09-27T12:33:32.929+09:00  INFO 4172 --- [RMI TCP Connection(46)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/Ch07]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
 2023-09-27T12:33:32.933+09:00  INFO 4172 --- [RMI TCP Connection(46)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-09-27T12:33:33.058+09:00  INFO 4172 --- [RMI TCP Connection(46)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-27T16:20:37.227+09:00  INFO 12772 --- [restartedMain] kr.co.ch07.Ch07Application               : Starting Ch07Application using Java 17.0.8.1 with PID 12772 (C:\Users\java\Desktop\Workspace\Spring\Ch07\target\classes started by java in C:\Users\java\Desktop\Workspace\Spring\Ch07)
+2023-09-27T16:20:37.228+09:00  INFO 12772 --- [restartedMain] kr.co.ch07.Ch07Application               : No active profile set, falling back to 1 default profile: "default"
+2023-09-27T16:20:37.376+09:00  INFO 12772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-27T16:20:37.376+09:00  INFO 12772 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-27T16:20:37.642+09:00  INFO 12772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-09-27T16:20:37.648+09:00  INFO 12772 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2023-09-27T16:20:37.895+09:00  INFO 12772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-27T16:20:37.901+09:00  INFO 12772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-27T16:20:37.901+09:00  INFO 12772 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-09-27T16:20:37.936+09:00  INFO 12772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/Ch07]   : Initializing Spring embedded WebApplicationContext
+2023-09-27T16:20:37.936+09:00  INFO 12772 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 560 ms
+2023-09-27T16:20:38.156+09:00  INFO 12772 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-09-27T16:20:38.254+09:00  INFO 12772 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-27T16:20:38.506+09:00  INFO 12772 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48cbeb0b
+2023-09-27T16:20:38.509+09:00  INFO 12772 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-27T16:20:38.580+09:00  INFO 12772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-27T16:20:38.601+09:00  INFO 12772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/Ch07'
+2023-09-27T16:20:38.606+09:00  INFO 12772 --- [restartedMain] kr.co.ch07.Ch07Application               : Started Ch07Application in 1.555 seconds (process running for 1.9)
+2023-09-27T16:20:53.644+09:00  INFO 12772 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/Ch07]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-27T16:20:53.644+09:00  INFO 12772 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-27T16:20:53.645+09:00  INFO 12772 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-27T16:24:56.209+09:00  INFO 12772 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-09-27T16:24:56.213+09:00  INFO 12772 --- [RMI TCP Connection(8)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-27T16:24:56.213+09:00  INFO 12772 --- [RMI TCP Connection(8)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/Ch07]   : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-27T16:24:56.217+09:00  INFO 12772 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-27T16:24:56.326+09:00  INFO 12772 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
