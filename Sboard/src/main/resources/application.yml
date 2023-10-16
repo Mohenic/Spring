@@ -1,0 +1,59 @@
+jwt:
+    issuer: syw077@gmail.com
+    secret: hclCKsmpN2NDe3NY7g8pHCro8ysAtGQv
+logging:
+    file:
+        name: log/Ch11.log
+    level:
+        jdbc:
+            connection: info
+            resultsettable: info
+            sqlonly: info
+            sqltiming: info
+        org:
+            hibernate: info
+            springframework:
+                security: debug
+        root: info
+server:
+    servlet:
+        context-path: /
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: Wan0&sanai
+        url: jdbc:mysql://3.34.179.96:3306/Jboard
+        username: root
+    devtools:
+        livereload:
+            enabled: true
+        remote:
+            restart:
+                enabled: true
+    jpa:
+        database: mysql
+        hibernate:
+            ddl-auto: none
+            naming:
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        properties:
+            hibernate:
+                format_sql: true
+                show_sql: true
+                use_sql_comments: true
+    security:
+        user:
+            name: user
+            password: 1234
+    thymeleaf:
+        cache: false
+        # prefix 설정을 안하면 HTML 수정 후 브라우저에서 새로고침 반영 안됨
+        ## 반드시 classpath 경로 쓰고 templates Controller return값 앞에 "/" 붙였을 경우
+        ## 마지막에 "/" 붙이면 배포 파일 실행 안됨
+
+        prefix: classpath:/templates
+
+    servlet:
+        multipart:
+            location: src/main/resources/static/file/
+            max-file-size: 10MB
